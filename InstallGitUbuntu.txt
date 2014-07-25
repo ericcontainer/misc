@@ -1,0 +1,20 @@
+# How to Install Git Ubuntu 12.04 #
+
+sudo apt-get update
+sudo apt-get install libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev build-essential
+wget https://www.kernel.org/pub/software/scm/git/git-2.0.3.tar.gz
+tar -zxfv  git-2.0.3.tar.gz
+cd git-2.0.3
+make prefix=/usr/local all
+sudo make prefix=/usr/local install
+which git --version
+
+# Commands #
+git config --global user.name "ericcontainer"
+git config --global user.email "eric687@gmail.com"
+git config --list
+
+- Project -
+git init
+git add .
+git commit -m "First Commit!"
