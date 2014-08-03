@@ -1,0 +1,8 @@
+http://python-on-mac.blogspot.com.br/2012/07/sublime-text-2-work-with-pythondjango.html
+1. Djaneiro - Django snippets (for templates, models and forms)
+2. SublimeRope - autocomplete for Python
+3. SublimeCodeIntel - code intelligence plugin
+4. SublimeLinter - show you lines, where you have not good code. Press on this line and see what is not good in this line of code. MAC OS users: install also Node.js to speed-up JavaScript code validation
+5. Version control with GIT and Mercurial
+6. Emmet (a re-branded Zen Coding) - the essential toolkit for web-developers
+7. GitIgnore - simple tool to generate .gitignore files, like it does on GitHub
