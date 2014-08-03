@@ -3,7 +3,7 @@
 sudo apt-get update
 sudo apt-get install libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev build-essential
 wget https://www.kernel.org/pub/software/scm/git/git-2.0.3.tar.gz
-tar -zxfv  git-2.0.3.tar.gz
+tar -zxvf  git-2.0.3.tar.gz
 cd git-2.0.3
 make prefix=/usr/local all
 sudo make prefix=/usr/local install
