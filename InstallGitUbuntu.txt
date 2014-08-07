@@ -10,8 +10,8 @@ sudo make prefix=/usr/local install
 which git --version
 
 # Commands #
-git config --global user.name "ericcontainer"
-git config --global user.email "eric687@gmail.com"
+git config --global user.name "user"
+git config --global user.email "uer@user.com"
 git config --list
 
 - Project -
