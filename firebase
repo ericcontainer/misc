@@ -1,0 +1,53 @@
+<html>
+<head>
+  <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: ""
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+  <script>
+    var a = [{
+      'nome':'eric',
+      'idade': 32,
+    },{
+      'nome':'henry',
+      'idade': 30,
+    }];
+
+    
+    var te = [{'valor':function (argument) {
+      return argument + 10;
+    }}];
+    console.log(te[0].valor(10))
+
+    console.log(JSON.stringify(a));
+
+      
+      
+    
+      var v = firebase.database().ref('/usuario/').child('-KjLjLxZ_LdD5nx0g28B').once('value').then(function(snapshot) {
+      var username = snapshot.val()[0].nome;
+      console.log("username: " + username);
+      return snapshot.val()[0].nome;
+      });
+      
+      console.log("Variavel Global: " + v);
+    
+    
+  </script>
+<head>
+<body>
+
+
+</body>
+</html>
