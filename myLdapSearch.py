@@ -37,7 +37,7 @@ def _connect(h = _ldap_host + ':' + _ldap_port):
                 result_set.append(result_data)
     print result_set
   except ldap.LDAPError, e:
-    print('Falha para conectar no ldap. Erro: '+ e)
+    print('Falha para realizar a busca no ldap. Erro: '+ e)
     #pdb.set_trace()
     l.unbind_s()
   l.unbind_s()
