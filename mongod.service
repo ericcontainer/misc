@@ -1,0 +1,16 @@
+[Unit]
+Description=Mongo Server
+Wants=network.target
+Before=network.target network.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/opt/programas/mongo/3.4.9/hom_93030_supcd/bin/mongod --dbpath /opt/programas/mongo/3.4.9/hom_93030_supcd/data/ --fork --bind_ip 127.0.0.1 --logpath /opt/programas/mongo/3.4.9/hom_93030_supcd/logs/log.out
+ExecStop=/opt/programas/mongo/3.4.9/hom_93030_supcd/bin/mongod --dbpath /opt/programas/mongo/3.4.9/hom_93030_supcd/data/ --shutdown
+
+ProtectSystem=true
+ProtectHome=read-only
+
+[Install]
+WantedBy=multi-user.target
