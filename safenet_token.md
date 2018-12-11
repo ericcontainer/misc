@@ -4,4 +4,4 @@ Editar -> Preferência -> Privacidade e Segurança -> Dispositivo de Segurança 
 Informar o caminho:
 /usr/lib/libeToken.so
 
-Funcionou para Ubunto 16.04LTS
+Funcionou para Ubuntu 16.04LTS
