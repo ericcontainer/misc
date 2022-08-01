@@ -1,5 +1,6 @@
-sudo apt install libnss3-tools
+# Resolve Token Problem on Google Chrome
+```sudo apt install libnss3-tools
 mkdir -p $HOME/.pki/nssdb
 cd $HOME
 certutil -d sql:$HOME/.pki/nssdb -L
-modutil -dbdir sql:.pki/nssdb/ -add "eToken" -libfile /usr/lib/libeToken.so
+modutil -dbdir sql:.pki/nssdb/ -add "eToken" -libfile /usr/lib/libeToken.so```
